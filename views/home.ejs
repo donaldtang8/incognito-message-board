@@ -1,0 +1,24 @@
+<%- include('partials/header'); -%>
+<div class="jumbotron">
+  <div class="container">
+    <h1 class="display-4">Welcome to INCOGNITO</h1>
+    <p class="lead">This is a incognito forum where users can discuss in a safe environment.</p>
+    <hr class="my-4">
+    <button type="button" class="btn btn-primary"><a href="/post">START POSTING</a></button>
+  </div>
+</div>
+
+<body>
+<div class="container">
+<% posts.forEach(function(post)  { %>
+<div class="card mt-5">
+  <div class="card-body">
+    <h3 class="card-title"><a href="/posts/<%= post.title %>" target="_b"><%= post.title %></a></h3>
+    <hr />
+    <p>Posted on <%= post.time %></p>
+    <hr />
+    <h6 class="card-text"><%= post.body.substring(0, 200) + " ..." %></h6>
+  </div>
+</div>
+<% }) %>
+<%- include('partials/footer'); -%>

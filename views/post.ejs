@@ -1,0 +1,46 @@
+<%- include('partials/header'); -%>
+<body>
+<div class="container">
+      <div class="col">
+        <!-- Title -->
+        <h1 class="mt-4"><%= post.title %></h1>
+
+        <hr>
+        <p>Posted on <%= post.time %></p>
+        <hr>
+        <%= post.body %>
+        <p>
+          <button class="btn btn-primary mt-5 mx-auto" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            Leave a Comment
+          </button>
+        </p>
+        <div class="collapse" id="collapseExample">
+          <div class="card mt-5 my-4">
+            <h5 class="card-header">Comment on this Post:</h5>
+            <div class="card-body">
+              <form action="/posts/<%= post.title %>" method="POST">
+                <div class="form-group">
+                  <input class="form-control mt-3" type="text" name="commentAuthor" placeholder="Name">
+                  <textarea class="form-control mt-3" name="commentBody" rows="5" cols="30" placeholder="Comment"></textarea>
+                </div>
+                <button class="btn btn-primary" type="submit" name="button">Publish Comment</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <h5 class="text-center mt-5">Previous Comments</h5>
+        <% comments.forEach(function(comment)  { %>
+          <div class="card mt-3">
+            <div class="card-body">
+              <blockquote class="blockquote">
+                <p class="mb-0"><%= comment.body %></p>
+                <footer class="blockquote-footer"><cite title="Source Title"><%= comment.author %></cite></footer>
+              </blockquote>
+            </div>
+          </div>
+        <% }) %>
+
+      </div>
+
+<%- include('partials/footer'); -%>

@@ -1,0 +1,78 @@
+.container {
+  text-align: center;
+}
+
+.wrapper {
+  background-color: #F67280 !important;
+}
+
+.jumbotron {
+  background-color: #F67280 !important;
+  text-align: center;
+  color: white;
+}
+
+.jumbotron .btn {
+  background-color: Transparent !important;
+  border-color: #F8B195 !important;
+}
+
+.jumbotron .btn:hover {
+  background-color: #F8B195 !important;
+}
+
+.jumbotron .btn a {
+  text-decoration: none;
+  color: white;
+  letter-spacing: 0.2em;
+}
+
+.container-fluid{
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+}
+
+.navbar-brand {
+  color: white !important;
+}
+
+.navbar-nav  li a {
+    color: white !important;
+}
+
+.navbar-nav  li a:hover {
+    color: #F8B195 !important;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #F8B195;
+  border-color: #F8B195;
+}
+
+.btn:hover {
+  background-color: #F67280;
+}
+
+.card-title {
+  text-align: center;
+}
+.card-title a {
+  text-decoration: none;
+  color: black;
+}
+
+
+.footer-copyright {
+  margin-bottom: 0;
+}
