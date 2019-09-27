@@ -44,6 +44,7 @@
 
 .navbar-brand {
   color: white !important;
+  font-size: 2em;
 }
 
 .navbar-nav  li a {
@@ -67,6 +68,7 @@
 .card-title {
   text-align: center;
 }
+
 .card-title a {
   text-decoration: none;
   color: black;
