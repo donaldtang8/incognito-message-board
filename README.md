@@ -6,8 +6,9 @@ Incognito is a web project that serves as an online anonymous message board for 
 It was created as a way to practice templating in web development, hence the large use of EJS files.
 
 ### Libraries and API's Used:
-1) ExpressJS - Create routes and backend Javascript logic
-2) EJS - View engine for templating
+1) Mongoose - Used to create mongo database and CRUD queries
+2) Node.js / ExpressJS - Create routes and backend Javascript logic
+3) EJS - View engine for templating
 
 ### How to run this program:
 1) Open up terminal and navigate to directory containing files
