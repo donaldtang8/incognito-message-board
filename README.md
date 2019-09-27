@@ -13,4 +13,4 @@ It was created as a way to practice templating in web development, hence the lar
 ### How to run this program:
 1) Open up terminal and navigate to directory containing files
 2) In terminal, run the command `npm i`
-3) When the download is finished, run the command 'node app.js`
+3) When the download is finished, run the command `node app.js`
